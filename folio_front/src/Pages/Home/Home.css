@@ -1,0 +1,263 @@
+@media only screen and (max-width: 900px) {
+    #HeaderName {
+      font-size: 15px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      margin-bottom: 0px;
+    }
+    #HeaderSubtext {
+      font-size: 11px;
+      margin-bottom: 0px;
+    }
+    #HeaderNameSubtext {
+      display: flex;
+      flex-direction: column;
+    }
+    #ProfPic {
+      width: 200px;
+      height: 200px;
+      border-radius: 45%;
+    }
+  
+    #ImageBox {
+      width: 250px;
+      height: 250px;
+      margin-left: auto;
+    }
+  
+    #Logo {
+      width: 75px;
+      height: 75px;
+      position: relative;
+      top: -50px;
+      border-radius: 45%;
+    }
+  
+    #IntroDescription {
+      text-align: center;
+    }
+  
+    .ImageWithLayers {
+      margin: 2rem;
+      height: 300px;
+      width: 300px;
+    }
+  
+    .IllustrationL {
+      height: 15rem;
+      width: auto;
+    }
+  
+    .SingleImg {
+      height: 15rem;
+      width: auto;
+      filter: drop-shadow(0 0 0.25rem #00eeff);
+    }
+  
+    .IllustrationI {
+      position: relative;
+      width: auto;
+      left: -20px;
+      top: 20px;
+      height: 15rem;
+      filter: drop-shadow(0 0 0.25rem #00eeff);
+    }
+    .ImageWithLayers {
+      height: 15rem;
+      width: auto;
+    }
+  
+    .Cards {
+      padding: 10%;
+    }
+    .FooterIcons {
+      gap: 10px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 681px) {
+    #HeaderName {
+      font-size: 30px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    #ProfPic {
+      width: 400px;
+      height: 400px;
+      opacity: 1;
+      border-radius: 45%;
+    }
+  
+    #ImageBox {
+      width: 500px;
+      height: 500px;
+    }
+  
+    #Logo {
+      width: 150px;
+      height: 150px;
+      position: relative;
+      top: -50px;
+      opacity: 1;
+      border-radius: 45%;
+    }
+  
+    .IllustrationI {
+      position: relative;
+      top: 100px;
+      left: -50px;
+      width: auto;
+      height: 30rem;
+      filter: drop-shadow(0 0 0.25rem #00eeff);
+    }
+  
+    .IllustrationL {
+      position: relative;
+      top: 0px;
+      width: auto;
+      height: 25rem;
+    }
+  
+    .SingleImg {
+      height: 30rem;
+      width: auto;
+      filter: drop-shadow(0 0 0.25rem #00eeff);
+    }
+  
+    .ImageWithLayers {
+      height: 40rem;
+      width: auto;
+    }
+    .FooterIcons {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  
+  #NavbarLogo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  #navbarToggleExternalContent {
+    transition: 0.5s;
+  }
+  
+  .NavList {
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: solid 1px white;
+    border-radius: 10px;
+    opacity: 0.3;
+  }
+  
+  .NavList:hover {
+    cursor: pointer;
+    opacity: 1;
+    background: linear-gradient(45deg, rgba(255, 0, 242), rgba(255, 217, 0) 100%);
+    border-radius: 25px;
+    transition: 0.5s;
+  }
+  
+  body {
+    background-color: #330033;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    height: 100vh;
+  }
+  
+  #TransparentBG {
+    background: linear-gradient(
+      45deg,
+      rgba(238, 110, 255),
+      rgba(255, 190, 115) 100%
+    );
+    border-bottom: solid #ffdd00;
+    filter: drop-shadow(0 0.75rem 0.75rem #ff25ff59);
+  }
+  
+  .IllusBreaks {
+    background: linear-gradient(
+      45deg,
+      rgba(225, 0, 255, 0.212),
+      rgba(255, 0, 200, 0.219) 100%
+    );
+    text-align: center;
+    border-top: solid 1px #ffdd00;
+  }
+  
+  #Header {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  #HeaderName {
+    margin: auto;
+    padding-left: 15px;
+  }
+  
+  #HeaderSubtext {
+    padding-left: 15px;
+    margin: auto;
+  }
+  
+  #HeaderNameSubtext {
+    color: white;
+  }
+  
+  #ProfPic:hover {
+    transition: 0.5s ease;
+    opacity: 1;
+    background: linear-gradient(45deg, rgba(255, 0, 242), rgba(255, 217, 0) 100%);
+    border-radius: 50%;
+  }
+  
+  #Logo:hover {
+    transition: 0.5s ease;
+    opacity: 1;
+    background: linear-gradient(45deg, rgba(255, 0, 242), rgba(255, 217, 0) 100%);
+    border-radius: 50%;
+  }
+  
+  .Icons {
+    width: 10%;
+    height: 10%;
+    opacity: 0.9;
+    transition: all 0.2s ease;
+  }
+  
+  .Icons:hover {
+    cursor: pointer;
+    opacity: 1;
+    width: 15%;
+    height: 15%;
+    border-radius: 5%;
+    filter: drop-shadow(0 0 0.75rem #ffdd00);
+  }
+  
+  .carousel-inner {
+    margin: auto;
+    width: 100%;
+  }
+  
+  .card-img-top {
+    height: auto;
+    width: auto;
+  }
+  
+  .CardPadding {
+    padding: 3%;
+  }
+  
+  .CardBtn {
+    background-color: #330033;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .CardBtn:hover {
+    transition: 0.5s ease;
+    background: linear-gradient(45deg, rgba(255, 0, 242), rgba(255, 217, 0) 100%);
+  }
+  
