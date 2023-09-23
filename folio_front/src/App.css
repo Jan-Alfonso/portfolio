@@ -1,5 +1,8 @@
 .gradient_background {
-    background: linear-gradient(#0062ff, #da61ff);
+    background: linear-gradient(#490b5c, #e6a800);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
   }

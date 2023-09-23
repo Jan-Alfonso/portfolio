@@ -6,10 +6,11 @@ import {
   Routes,
 } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-import Navbar from "./components/Navbar";
-import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
-import Portfolio from "./components/Portfolio";
+import Navbar from "./components/Navbar/Navbar";
+import AboutMe from "./Pages/AboutMe/AboutMe";
+import Contact from "./Pages/Contact/Contact";
+import Portfolio from "./Pages/Portfolio/Portfolio";
+import "./App.css"
 
 
 function App() {

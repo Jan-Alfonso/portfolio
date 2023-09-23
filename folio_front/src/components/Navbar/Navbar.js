@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/janAlfonsoLogo.svg";
+import logo from "../../assets/janAlfonsoLogo.svg";
 
 const pages = ["About Me", "Portfolio", "Contact"];
 
