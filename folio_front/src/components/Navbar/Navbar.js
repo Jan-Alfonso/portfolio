@@ -112,7 +112,7 @@ function Navbar() {
           >
             <img src={logo} width={400} alt="logo"></img>
           </Typography>
-          <Box sx={{ flexGrow: 1, flexDirection: "row-reverse", display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, justifyContent:"flex-end", display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
