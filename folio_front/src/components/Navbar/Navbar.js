@@ -10,6 +10,7 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/janAlfonsoLogo.svg";
+import logoSm from "../../assets/janAlfonsoLogo_sm.svg";
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -17,8 +18,6 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { FaArrowRight } from "react-icons/fa6";
-import Spinner from "../Spinner/Spinner";
-import { useState, useEffect } from "react";
 
 
 const pages = ["About Me", "Portfolio", "Contact"];
@@ -64,40 +63,11 @@ function TemporaryDrawer() {
       </List>
     </Box>
   );
-
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }, []);
  
   return (
-
-    <>{loading ? ( <Spinner/> ) : (
     <AppBar id="AppBar" position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <div className="logo">
-              <Typography
-                variant="h6"
-                noWrap
-                component="a"
-                href="/"
-                sx={{
-                  mr: 2,
-                  display: { xs: "none", md: "flex" },
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                  letterSpacing: ".3rem",
-                  color: "inherit",
-                  textDecoration: "none",
-                }}
-              >
-                <img src={logo} width={300} alt="logo" />
-              </Typography>
-            </div>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <MenuIcon />
               {pages.map((anchor) => (
@@ -121,10 +91,11 @@ function TemporaryDrawer() {
             to="/"
             sx={{
               mr: 2,
-              display: { xs: "flex", md: "none" },
+              display: { xs: "flex", md: "flex" },
               flexGrow: 1,
               textAlign: "center",
-              marginRight:"50px",
+              justifyContent: {xs: "flex-end", md:"flex-start"},
+              marginRight: "",
               fontFamily: "Poppins",
               fontWeight: 300,
               letterSpacing: ".1rem",
@@ -132,7 +103,7 @@ function TemporaryDrawer() {
               textDecoration: "none",
             }}
           >
-            <img src={logo} width={250} alt="logo"></img>
+            <img src={logoSm} width={200} alt="logo"></img>
           </Typography>
           <Box sx={{ flexGrow: 1, justifyContent:"flex-end", display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -150,8 +121,6 @@ function TemporaryDrawer() {
         </Toolbar>
       </Container>
     </AppBar>
-    )}
-    </>
   );
 }
 export default TemporaryDrawer;
