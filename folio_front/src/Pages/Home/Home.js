@@ -50,12 +50,12 @@ function Home() {
         <Grid item xs={12}
         id="IntroDescription"
         >
-
+          <Grid>
           <h2 className="text-light justify-content-center fs-sm-6"><b className="text-warning">Hello!</b> I'm Jan Meriss Alfonso</h2>
-          <p className="fs-10 text-light">
-            I am a skilled virtual assistant and graphic designer 
-            with 4 years of experience in the industry.
+          <p className="fs-5 text-light">
+          I'm a skilled virtual assistant and graphic designer with 4 years of experience. Recently, I transitioned into web development to bring my designs to life and make them interactive. Let's create engaging web experiences together.
           </p>
+          </Grid>
 
             <Grid sx={{
               display: "flex",
@@ -63,7 +63,7 @@ function Home() {
             }} id="des-icons">
             <a href="https://www.facebook.com/potching.a06" className="Icons" target="_blank" rel="noreferrer"><img src={fb} class="w-100 h-100" alt="FB"/></a>
             <a href="mailto:janmerissalfonso@gmail.com" className="Icons" target="_blank" rel="noreferrer"><img src={gmail} class="w-100 h-100" alt="Gmail"/></a>
-            <a href="mailto:janmerissalfonso@gmail.com" className="Icons" target="_blank" rel="noreferrer"><img src={skype} class="w-100 h-100" alt="Skype"/></a>
+            <a href="https://join.skype.com/invite/Xpfp7baKfW6u" className="Icons" target="_blank" rel="noreferrer"><img src={skype} class="w-100 h-100" alt="Skype"/></a>
             <a href="https://www.instagram.com/meriss_alfonso/" className="Icons" target="_blank" rel="noreferrer"><img src={ig} class="w-100 h-100" alt="instagram"/></a>
             <a href="https://www.linkedin.com/in/jan-meriss-alfonso-a882b51b6" className="Icons" target="_blank" rel="noreferrer"><img src={linkedin} class="w-100 h-100" alt="linkedin"/></a>
             </Grid>

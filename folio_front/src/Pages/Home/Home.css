@@ -1,4 +1,26 @@
 
+@keyframes fadeToRight {
+  from {
+    opacity: 0%;
+    transform: translateX(-10%);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeToBottom {
+  from {
+    opacity: 0%;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
 
 @media only screen and (max-width: 900px) {
     #HeaderName {
@@ -24,6 +46,7 @@
     #ImageBox {
       width: 250px;
       height: 250px;
+      animation: fadeToBottom 3s forwards;
 
     }
   
@@ -38,6 +61,7 @@
     #IntroDescription {
       text-align: center;
       margin: 10%;
+      animation: fadeToBottom 2s forwards;
     }
   
     .ImageWithLayers {
@@ -96,6 +120,7 @@
     #ImageBox {
       width: 400px;
       height: 400px;
+      animation: fadeToRight 3s forwards;
     }
   
     #Logo {
@@ -109,7 +134,9 @@
 
     #IntroDescription {
       text-align: center;
-      margin-top: 10%;
+      padding: 7%;
+      margin-right: 10%;
+      animation: fadeToRight 2.5s forwards;
     }
 
     #des-icons{
