@@ -3,11 +3,23 @@
     100% { transform: rotate(360deg) }
   }
 
+  @media only screen and (max-width: 900px) {
+
   .spinner-container {
-    position: absolute;
-  left: 45%;
-  top: 45%;
-  }
+    position: fixed;
+    left: 20%;
+    top: 20%;
+    }
+    }
+
+  @media only screen and (min-width: 681px) {
+
+.spinner-container {
+    position: fixed;
+    top: 42%;
+    left: 42%;
+    }
+    }
 
   .ldio-zajneawomxa div { box-sizing: border-box!important }
   .ldio-zajneawomxa > div {

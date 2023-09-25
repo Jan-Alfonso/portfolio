@@ -7,23 +7,12 @@ import linkedin from "../../assets/linkedin.png";
 import skype from "../../assets/skype.png";
 import gmail from "../../assets/gmail.png";
 import "./Home.css";
-import Spinner from "../../components/Spinner/Spinner";
-import { useState, useEffect } from "react";
 import { Grid } from "@mui/material";
 
 function Home() {
 
-  const [loading, setLoading] = useState(true);
-
-useEffect(() => {
-  setTimeout(() => {
-    setLoading(false);
-  }, 3000);
-}, []);
-
   return (
     <div>
-      {loading ? ( <Spinner/> ) : (
       <Grid container spacing={2}>
       <Grid item xs={12} md={12} sx={{
         display: "flex",
@@ -84,7 +73,6 @@ useEffect(() => {
 
       </Grid>
     </Grid>
-      )}
     </div>
   );
 }

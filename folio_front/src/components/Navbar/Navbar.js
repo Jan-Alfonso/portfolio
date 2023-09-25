@@ -9,7 +9,6 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../../assets/janAlfonsoLogo.svg";
 import logoSm from "../../assets/janAlfonsoLogo_sm.svg";
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
