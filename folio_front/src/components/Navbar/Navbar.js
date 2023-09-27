@@ -68,10 +68,9 @@ function TemporaryDrawer() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-          <MenuIcon />
               {['left'].map((anchor) => (
                 <React.Fragment key={anchor}>
-                <IconButton onClick={toggleDrawer(anchor, true)}></IconButton>
+                <IconButton onClick={toggleDrawer(anchor, true)} sx={{color: 'white'}}><MenuIcon style={{fontSize:'2rem'}} /></IconButton>
                 <Drawer
                   anchor={anchor}
                   open={state[anchor]}
