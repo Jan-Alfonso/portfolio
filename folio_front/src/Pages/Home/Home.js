@@ -14,9 +14,16 @@ function Home() {
 
   return (
     <div>
-      <Grid container spacing={2} sx={{marginTop:{xs:'20%', md:'10%'}}}>
+      <Grid container spacing={2}
+      sx={{display: "flex",
+        justifyContent: {xs: "center"},
+        alignItems: "center",
+        margin: "0 !important",
+        padding: "0 !important",
+        width: '100%',}}>
       <Grid sx={{
         display: "flex",
+        justifyContent: {xs: "center"},
         flexDirection: {xs: "column", md:"row"}
         }}>
 
@@ -24,7 +31,8 @@ function Home() {
         sx={{
           display: "flex",
           justifyContent: {xs: "center"},
-          marginLeft: {md: "15%"}
+          marginLeft: {md: "15%"},
+          marginTop:{xs:'20%', md:'10%'}
         }}
         >
         <Grid id="ImageBox">
@@ -48,7 +56,7 @@ function Home() {
         </Grid>
 
 
-        <Grid item xs={12} id="IntroDescription">
+        <Grid item xs={12} id="IntroDescription" sx={{marginTop:{xs:'20%', md:'10%'}}}>
           <Grid>
           <h2 className="text-light justify-content-center fs-sm-6"><b className="text-warning">Hello!</b> I'm Jan Meriss Alfonso</h2>
           <Box sx={{fontSize: {xs: "15px", md: "20px"}, color: "white", margin: "5%"}}>
