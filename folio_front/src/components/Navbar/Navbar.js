@@ -19,7 +19,7 @@ import ListItemText from '@mui/material/ListItemText';
 import { FaArrowRight } from "react-icons/fa6";
 
 
-const pages = ["About Me", "Portfolio", "Contact"];
+const pages = ["Home", "Portfolio", "Contact"];
 
 function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -64,12 +64,12 @@ function TemporaryDrawer() {
   );
  
   return (
-    <AppBar id="AppBar" position="static">
+    <AppBar id="AppBar" position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-              <MenuIcon />
-              {pages.map((anchor) => (
+          <MenuIcon />
+              {['left'].map((anchor) => (
                 <React.Fragment key={anchor}>
                 <IconButton onClick={toggleDrawer(anchor, true)}></IconButton>
                 <Drawer

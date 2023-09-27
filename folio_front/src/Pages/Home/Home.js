@@ -7,18 +7,19 @@ import linkedin from "../../assets/linkedin.png";
 import skype from "../../assets/skype.png";
 import gmail from "../../assets/gmail.png";
 import "./Home.css";
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
+
 
 function Home() {
 
   return (
     <div>
-      <Grid container spacing={2}>
-      <Grid item xs={12} md={12} sx={{
+      <Grid container spacing={2} sx={{marginTop:{xs:'20%', md:'10%'}}}>
+      <Grid sx={{
         display: "flex",
         flexDirection: {xs: "column", md:"row"}
-        }}
-        >
+        }}>
+
         <Grid
         sx={{
           display: "flex",
@@ -47,16 +48,13 @@ function Home() {
         </Grid>
 
 
-        <Grid item xs={12}
-        id="IntroDescription"
-        >
+        <Grid item xs={12} id="IntroDescription">
           <Grid>
           <h2 className="text-light justify-content-center fs-sm-6"><b className="text-warning">Hello!</b> I'm Jan Meriss Alfonso</h2>
-          <p className="fs-5 text-light">
+          <Box sx={{fontSize: {xs: "15px", md: "20px"}, color: "white", margin: "5%"}}>
           I'm a skilled virtual assistant and graphic designer with 4 years of experience. Recently, I transitioned into web development to bring my designs to life and make them interactive. Let's create engaging web experiences together.
-          </p>
+          </Box>
           </Grid>
-
             <Grid sx={{
               display: "flex",
               justifyContent: "space-between"
@@ -67,9 +65,7 @@ function Home() {
             <a href="https://www.instagram.com/meriss_alfonso/" className="Icons" target="_blank" rel="noreferrer"><img src={ig} class="w-100 h-100" alt="instagram"/></a>
             <a href="https://www.linkedin.com/in/jan-meriss-alfonso-a882b51b6" className="Icons" target="_blank" rel="noreferrer"><img src={linkedin} class="w-100 h-100" alt="linkedin"/></a>
             </Grid>
-
         </Grid>
-      
 
       </Grid>
     </Grid>
