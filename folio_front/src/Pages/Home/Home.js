@@ -8,12 +8,19 @@ import skype from "../../assets/skype.png";
 import gmail from "../../assets/gmail.png";
 import "./Home.css";
 import { Box, Grid } from "@mui/material";
+import "../../assets/bgVid.mp4";
 
 
 function Home() {
 
   return (
     <div>
+      <div className="bgVidOvrly">
+      <video loop autoPlay muted className="bgVid">
+        <source src={require("../../assets/bgVid.mp4")} type="video/mp4" />
+      </video>
+      </div>
+      <div className="homeContent">
       <Grid container spacing={2}
       sx={{display: "flex",
         justifyContent: {xs: "center"},
@@ -77,6 +84,7 @@ function Home() {
 
       </Grid>
     </Grid>
+    </div>
     </div>
   );
 }
