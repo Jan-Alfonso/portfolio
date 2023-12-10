@@ -41,7 +41,7 @@
       position: relative;
       width: 200px;
       height: 200px;
-      top: 15%;
+      transform: translateY(20%);
       border-radius: 45%;
     }
   
@@ -56,7 +56,7 @@
       width: 75px;
       height: 75px;
       position: relative;
-      top: 0%;
+      transform: translatY(0%);
       border-radius: 45%;
     }
   
@@ -70,7 +70,7 @@
       position: relative;
       overflow: hidden;
       width: 100vw;
-      height: 100vh;
+      height: 100;
       align-content: center;
       background-color: rgba(0, 0, 0, 0.5);
     }
@@ -79,8 +79,8 @@
       overflow: hidden;
       position: relative;
       max-width: auto;
-      max-height: 1000px;
-      right: 50%;
+      max-height: 100%;
+      transform: translatY(50%);
       z-index: -1;
     }
 
@@ -169,7 +169,6 @@
       position: relative;
       width: 100%;
       height: auto;
-      top: -10%;
       background-color: rgba(0, 0, 0, 0.5);
     }
 

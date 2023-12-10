@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import {
   Navigate,
   Route,
@@ -14,24 +14,30 @@ import LoadingWrapper from "./components/Spinner/LoadingWrap"
 
 
 function App() {
-
+  const LazyLoadedComponent = React.lazy(() => import('../src/components/Spinner/Spinner.js'));
   const isDashboardRoutes = window.location.pathname.startsWith("/");
 
   return (
     <>
     
-      <Router>
+    <Router>
         {isDashboardRoutes && <Navbar />}
-        
-        <LoadingWrapper>
         <Routes>
-          <Route exact path="/" element={<Navigate to="/Home" />} />
+          <Route
+            exact
+            path="/"
+            element={
+              <Suspense fallback={<LoadingWrapper />}>
+                <LazyLoadedComponent />
+              </Suspense>
+            }
+          />
           <Route exact path="/Home" element={<Home />} />
-          <Route exact path="/portfolio" element={<Portfolio/>} />
-          <Route exact path="/contact" element={<Contact/>} />
+          <Route exact path="/portfolio" element={<Portfolio />} />
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
-        </LoadingWrapper>
       </Router>
+      
     
     </>
   );

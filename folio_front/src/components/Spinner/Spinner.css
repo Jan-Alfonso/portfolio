@@ -7,21 +7,19 @@
 
   .spinner-container {
     position: fixed;
-    left: 20%;
-    top: 20%;
     }
     }
 
   @media only screen and (min-width: 681px) {
 
 .spinner-container {
-    position: fixed;
-    top: 42%;
-    left: 42%;
+  position:relative;
     }
     }
 
-  .ldio-zajneawomxa div { box-sizing: border-box!important }
+  .ldio-zajneawomxa div { 
+    box-sizing: border-box!important
+  }
   .ldio-zajneawomxa > div {
     position: absolute;
     width: 159.34px;
