@@ -16,7 +16,7 @@ function Home() {
   return (
     <div>
       <div className="bgVidOvrly">
-      <video loop autoPlay muted className="bgVid">
+      <video loop autoPlay muted playsInline className="bgVid">
         <source 
         src={require("../../assets/bgVid.mp4")}
         type="video/mp4"
