@@ -17,7 +17,10 @@ function Home() {
     <div>
       <div className="bgVidOvrly">
       <video loop autoPlay muted className="bgVid">
-        <source src={require("../../assets/bgVid.mp4")} type="video/mp4" />
+        <source 
+        src={require("../../assets/bgVid.mp4")}
+        type="video/mp4"
+        loading="lazy" />
       </video>
       </div>
       <div className="homeContent">
@@ -49,6 +52,7 @@ function Home() {
           src={profile}
           alt="ProfilePicture"
           className="d-block img-fluid mx-auto"
+          loading="lazy"
           id="ProfPic"/>
         </a>
 
@@ -57,6 +61,7 @@ function Home() {
           src={logo}
           alt="Logo"
           className="mx-auto d-block img-fluid"
+          loading="lazy"
           id="Logo"/>
         </a>
         </Grid>
