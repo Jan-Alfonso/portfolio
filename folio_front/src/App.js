@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import {
-  Navigate,
   Route,
   BrowserRouter as Router,
   Routes,
@@ -14,7 +13,7 @@ import LoadingWrapper from "./components/Spinner/LoadingWrap"
 
 
 function App() {
-  const LazyLoadedComponent = React.lazy(() => import('../src/assets/bgVid.mp4'));
+  const LazyLoadedComponentHome = React.lazy(() => import('../src/Pages/Home/Home'));
   const isDashboardRoutes = window.location.pathname.startsWith("/");
 
   return (
@@ -28,7 +27,7 @@ function App() {
             path="/"
             element={
               <Suspense fallback={<LoadingWrapper />}>
-                <LazyLoadedComponent />
+                <LazyLoadedComponentHome />
               </Suspense>
             }
           />
