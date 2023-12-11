@@ -14,7 +14,7 @@ import LoadingWrapper from "./components/Spinner/LoadingWrap"
 
 
 function App() {
-  const LazyLoadedComponent = React.lazy(() => import('../src/components/Spinner/Spinner.js'));
+  const LazyLoadedComponent = React.lazy(() => import('../src/Pages/Home/Home'));
   const isDashboardRoutes = window.location.pathname.startsWith("/");
 
   return (
