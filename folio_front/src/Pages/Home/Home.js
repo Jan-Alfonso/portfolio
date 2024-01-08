@@ -10,7 +10,6 @@ import "./Home.css";
 import { Box, Grid } from "@mui/material";
 import "../../assets/bgVid.mp4";
 
-
 function Home() {
 
   return (

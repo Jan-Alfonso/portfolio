@@ -1,0 +1,5 @@
+#mailerBox {
+    transform: translatY(0%);
+    border-radius: 45%;
+    animation: fadeToBottom 3s forwards;
+}

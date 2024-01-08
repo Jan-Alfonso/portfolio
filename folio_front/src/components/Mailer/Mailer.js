@@ -19,8 +19,9 @@ export default function BasicTextFields() {
 
   return (
     <>
-    <Box sx={{width: "100%", height: {xs: '100px', md: '200px'}}}></Box>
+    <Box  sx={{width: "100%", height: {xs: '100px', md: '200px'}}}></Box>
     <Box
+      id='mailerBox'
       component="form"
       sx={{
         display: 'flex',
