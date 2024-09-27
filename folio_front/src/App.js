@@ -33,7 +33,7 @@ function App() {
           />
           <Route exact path="/Home" element={<Home />} />
           <Route exact path="/portfolio" element={<Portfolio />} />
-          <Route exact path="/contact" element={<Contact />} />
+          {/* <Route exact path="/contact" element={<Contact />} /> */}
         </Routes>
       </Router>
       
